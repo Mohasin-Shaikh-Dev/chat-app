@@ -1,0 +1,89 @@
+/* General chat application styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+#chatMsg {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.input-group input,
+.input-group-append button {
+  font-size: 1rem;
+}
+
+.input-group-append button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+/* Styles for message */
+.message-wrapper {
+  background-color: #e9ecef; /* Same background for name, content, date, and time */
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.message-box {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+/* Sent message styles */
+.sent-message {
+  background-color: #d1e7ff; /* Light blue background for sent messages */
+  text-align: left; /* Align sent messages to the right */
+}
+
+/* Received message styles */
+.received-message {
+  background-color: #f8d7da; /* Light red background for received messages */
+  text-align: left; /* Align received messages to the left */
+}
+
+/* Sender's name and content styles */
+.sender-content-box {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.content-box {
+  background-color: #f1f1f1; /* Different background for the content */
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.date-time-box {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-align: right;
+}
+
+/* Ensure messages scroll properly */
+#chatMsg {
+  overflow-y: auto;
+}
