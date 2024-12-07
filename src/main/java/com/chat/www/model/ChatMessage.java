@@ -1,5 +1,6 @@
 package com.chat.www.model;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -24,6 +25,9 @@ public class ChatMessage {
 	String sender;
 	String content;
 	@CreationTimestamp
-	LocalTime localTime;
+	LocalDate date;
+	
+	@CreationTimestamp
+	LocalTime time;
 	
 }
